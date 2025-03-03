@@ -41,6 +41,8 @@ body{
     justify-content: space-between;
     /* background-color: red; */
     padding: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 #navList{
@@ -48,6 +50,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+   
 }
 
 #paragraph{
@@ -56,4 +59,35 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 70px;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2{
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: green;
 }

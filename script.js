@@ -64,25 +64,57 @@
 
 
 
-var tl = gsap.timeline()
+// var tl = gsap.timeline()
 
-tl.from("#navName",{
-    y: -30,
-    opacity:0,
+// tl.from("#navName",{
+//     y: -30,
+//     opacity:0,
+//     duaration:0.2,
+//     delay:0.2
+// })
+
+// tl.from("h4",{
+//     x:-30,
+//     opacity:0,
+//     duaration:0.2,
+//     stagger:0.1
+// })
+
+// tl.from("#paragraph",{
+//     x:-20,
+//     opacity:0,
+//     duaration:0.5,
+//     scale:0.3
+// })
+
+
+
+
+gsap.from("#page1 #box",{
+    scale:0,
+    delay:1,
     duaration:1,
-    delay:0.5
+    rotation:360,
+    borderRadius:"50%"
+})
+gsap.from("#page2 #box",{
+    scale:0,
+    delay:1,
+    duaration:1,
+    rotation:360,
+    borderRadius:"50%",
+    scrollTrigger:{
+        trigger:"#page2 #box",
+        scroller: "body",
+        markers:true,
+        start: "top 60%"
+    }
 })
 
-tl.from("h4",{
-    y:-30,
-    opacity:0,
-    duaration:0.2,
-    stagger:0.3
-})
-
-tl.from("#paragraph",{
-    y:20,
-    opacity:0,
-    duaration:0.5,
-    scale:0.3
+gsap.from("#page3 #box",{
+    backgroundColor: "red",
+    borderRadius:"50%",
+    scrollTrigger: "#page3 #box",
+    delay:1,
+    duaration:2
 })
