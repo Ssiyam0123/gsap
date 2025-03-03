@@ -4,7 +4,7 @@ gsap.to("#box",{
     rotate:360,
     delay:0,
     backgroundColor: "green",
-    borderRadius:""
+    borderRadius:"50%"
 })
 
 
