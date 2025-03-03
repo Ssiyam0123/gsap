@@ -33,3 +33,27 @@ background: gold;
 body{
     background-color: #111;
 }
+
+
+#navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 20px;
+}
+
+#navList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#paragraph{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 70px;
+}
