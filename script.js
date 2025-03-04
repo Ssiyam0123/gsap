@@ -1,12 +1,38 @@
-gsap.to("#exmp h1", {
-    x: "-150vw", // Moves text fully off-screen
-    scrollTrigger: {
-      trigger: "#page2", // Animation starts when scrolling to #page2
-      scroller: "body",
-      start: "top bottom", // Starts when #page2 is at bottom of viewport
-      end: "top 50%", // Ends when #page2 reaches 50% of viewport
-      scrub: 2, // Smooth animation
-      markers: true, // Debug markers (remove in production)
-    },
-  });
+var initialPath = `M 10 100 Q 500 100 990 100`
+var finalPath = `M 10 100 Q 500 100 990 100`
+
+var string = document.querySelector("#string")
+
+
+// string.addEventListener("mouseenter", function(dets){
+//     console.log(dets)
+//     console.log('enter')
+// })
+
+string.addEventListener("mousemove", function(dets){
+// console.log(dets.y)
+const path = `M 10 100 Q 500 ${dets.y} 990 100`
+
+gsap.to("svg path",{
+    attr: {d:path},
+    duaration: 0.3,
+    ease: "power3.out"
+
+})
+})
+
+
+
+
+string.addEventListener("mouseleave", function(){
+   gsap.to("svg path",{
+    attr:{d:finalPath},
+    duaration:0.3,
+    ease: "elastic.out(1,0.2)"
+   })
+})
+
+
+
+
   

@@ -2,29 +2,17 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scroll issues */
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
-#exmp {
-    background-color: blue;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align text to the left instead of center */
-    padding-left: 5vw; /* Adds spacing so text is fully visible */
-    overflow: hidden;
+ 
+#string {
+    height: 200px;
+    width: 100%;
+    /* background-color: red; */
 }
 
-#exmp h1 {
-    font-size: 15vw; /* Reduce font size to fit within screen */
-    text-transform: uppercase;
-    white-space: nowrap; /* Prevents line breaks */
-    color: white;
-    position: relative;
-}
 
-#page2 {
-    height: 150vh; /* This ensures there’s enough scrolling space */
-    background-color: black;
+svg{
+    /* background-color: green; */
 }
