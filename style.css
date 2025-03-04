@@ -1,93 +1,30 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll issues */
+    background-color: black;
+}
+
+#exmp {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text to the left instead of center */
+    padding-left: 5vw; /* Adds spacing so text is fully visible */
+    overflow: hidden;
+}
+
+#exmp h1 {
+    font-size: 15vw; /* Reduce font size to fit within screen */
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents line breaks */
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-html,body{
-    height: 100%;
-    width: 100%;
+    position: relative;
 }
 
-#box{
-height: 300px;
-width:300px;
-background: crimson;
-}
-#box2{
-height: 300px;
-width:300px;
-background: seagreen;
-}
-#box3{
-height: 300px;
-width:300px;
-background: saddlebrown;
-}
-#box4{
-height: 300px;
-width:300px;
-background: gold;
-}
-body{
-    background-color: #111;
-}
-
-
-#navbar{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    /* background-color: red; */
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-}
-
-#navList{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-   
-}
-
-#paragraph{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 70px;
-}
-
-#page1{
-    width: 100%;
-    height: 100%;
-    background-color: crimson;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#page2{
-    width: 100%;
-    height: 100%;
-    background-color: greenyellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#page3{
-    width: 100%;
-    height: 100%;
-    background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#box{
-    height: 300px;
-    width: 300px;
-    background-color: green;
+#page2 {
+    height: 150vh; /* This ensures there’s enough scrolling space */
+    background-color: black;
 }
