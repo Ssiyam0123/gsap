@@ -1,21 +1,12 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
-} */
-
-
-#maine{
-
-    height: 100%;
-    width: 100%;
-    background-color: #111;
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
 }
- 
-#cursor{
-    height: 50px;
-    width: 50px;
-    background-color: brown;
-    border-radius: 50%;
-    position: absolute;
+
+#list{
+    display: flex;
 }
