@@ -11,13 +11,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <section
-      class="flex justify-between items-center w-[80%] mx-auto relative py-[40px]"
+     id="navbar" class="flex justify-between items-center w-[80%] mx-auto relative py-[40px]"
     >
-      <h1 class="text-4xl flex items-center font-bold">
-        <i class="ri-gemini-fill block rotate-45 mr-2"></i>WizerdZ
-      </h1>
+      <nav class="text-4xl flex items-center font-bold">
+        <h1><i class="ri-gemini-fill rotate-45"></i>WizerdZ</h1>
+      </nav>
 
       <div class="flex space-x-4 items-center text-xl font-semibold">
         <p>About us</p>
@@ -34,12 +34,12 @@
     </section>
 
     <div class="h-[80%] flex justify-between w-[78%] mx-auto mt-16">
-      <div class="h-[100%] w-[45%]">
+      <div id="center1" class="h-[100%] w-[45%] ">
         <h1 class="text-3xl font-semibold mb-7">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
           dolore.
         </h1>
-        <p class="text-xl font-light mb-5">
+        <p class="text-xl font-light mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           iusto obcaecati dolores non laboriosam numquam dolorem! Fuga voluptas
           nulla recusandae distinctio eum corrupti non! Quas, vel? Debitis
@@ -52,7 +52,7 @@
           Book Now
         </button>
       </div>
-      <div class="h-[100%] w-[55%] flex items-center justify-center">
+      <div id="center2" class="h-[100%] w-[55%] flex items-center justify-center">
         <img
           class="h-[100%] w-[60%] right-0 block"
           src="https://static.semrush.com/blog/uploads/media/22/12/2212e237ecd8feffea1ec3b2d52cbd37/17fcb59146cd3d59512364d5b19392ea/affiliate-marketing-programs.svg"
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between m-16">
+    <div id="section1bottom" class="flex justify-between m-16">
       <img class="h-14" src="../public/amazon.png" alt="" srcset="" />
       <img class="h-14" src="../public/zoom.png" alt="" srcset="" />
       <img class="h-14" src="../public/amazon.png" alt="" srcset="" />
@@ -168,11 +168,19 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="script.js"></script>
-
-
-
   </body>
 </html>
