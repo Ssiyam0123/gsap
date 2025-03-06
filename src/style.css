@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+section{
+height: 100%;
+width: 100%;
+position: relative;
+display: flex;
+justify-content: space-between;
+}
+
+ .name{
+font-size: 55px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 50px;
+    
+}
+
+
+nav h4{
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+nav button{
+    padding: 22px 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#center{
+    background-color: rgb(225, 99, 99);
+    height: 85px;
+    width: 100px;
+}
